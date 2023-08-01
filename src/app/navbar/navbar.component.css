@@ -1,0 +1,94 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  margin: 0;
+}
+
+.orange-btn,
+.light-btn {
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.6rem 1rem;
+}
+
+.orange-btn {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.light-btn {
+  background-color: var(--gray);
+  color: var(--navy);
+}
+
+.light-btn:active {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.margin-left {
+  margin-left: 0.65rem;
+}
+
+.mobile {
+  display: inline-block;
+}
+
+.desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 468px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: inline-block;
+  }
+}
+
+/* Modal */
+.modal {
+  background-color: #0008;
+  backdrop-filter: blur(4px);
+  display: none;
+  position: absolute;
+  justify-content: center;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.modal-active {
+  display: flex;
+}
+
+.modal-buttons-container {
+  background-color: var(--white);
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  max-width: 16rem;
+  width: 70vw;
+
+  margin: auto;
+  padding: 1rem 1.5rem;
+}
+
+.modal-button {
+  font-size: 1.2rem;
+
+  margin: 0.5rem 0;
+}

@@ -1,0 +1,20 @@
+<nav>
+  <h1 class="nav-brand">memory</h1>
+  <div class="nav-buttons-container">
+    <button class="orange-btn desktop" (click)="restart()">Restart</button>
+    <button class="light-btn margin-left desktop" (click)="newGame()">
+      New Game
+    </button>
+    <button class="orange-btn mobile" (click)="openMenu()">Menu</button>
+  </div>
+</nav>
+
+<div class="modal" [class.modal-active]="game.menu">
+  <div class="modal-buttons-container">
+    <button class="modal-button orange-btn" (click)="restart()">Restart</button>
+    <button class="modal-button light-btn" (click)="newGame()">New Game</button>
+    <button class="modal-button light-btn" (click)="closeMenu()">
+      Resume Game
+    </button>
+  </div>
+</div>

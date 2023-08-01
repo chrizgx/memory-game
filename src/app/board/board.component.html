@@ -1,0 +1,22 @@
+<p>board works!</p>
+<div class="board">
+  <div class="board-row" *ngFor="let row of game.board; let rowCount = index">
+    <button
+      class="board-cell"
+      *ngFor="let cell of row; let colCount = index"
+      (click)="game.play(rowCount, colCount)"
+      [class.board-cell-4]="game.board.length===4"
+      [class.board-cell-6]="game.board.length===6"
+      [class.active]="game.board[rowCount][colCount].state == 'active'"
+      [class.wrong]="game.board[rowCount][colCount].state == 'wrong'"
+      [class.correct]="game.board[rowCount][colCount].state == 'correct'"
+    >
+      <span
+        *ngIf="!game.icons"
+        class="numbers"
+        [class.numbers-active]="['active', 'wrong', 'correct'].includes(cell.state)"
+        >{{ !game.icons ? cell.value : '' }}</span
+      >
+    </button>
+  </div>
+</div>

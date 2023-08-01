@@ -1,0 +1,56 @@
+.board {
+  align-self: center;
+  /* margin: auto; */
+}
+
+.board-cell {
+  background-color: var(--navy);
+  border-radius: 100%;
+  transition-duration: 0.15s;
+}
+
+.board-cell-4 {
+  height: 20vw;
+  max-height: 6rem;
+  width: 20vw;
+  max-width: 6rem;
+  margin: 0.25rem;
+
+  font-size: 12vw;
+}
+
+.board-cell-6 {
+  height: 14vw;
+  max-height: 4rem;
+  width: 14vw;
+  max-width: 4rem;
+  margin: 0.15rem;
+
+  font-size: 8vw;
+}
+
+.active {
+  background-color: var(--orange);
+}
+
+.wrong {
+  background-color: red;
+}
+
+.correct {
+  background-color: var(--light-slate);
+}
+
+/* Numbers Styling */
+
+span.numbers {
+  color: var(--white);
+  /* font-size: 12vw; */
+  font-weight: bold;
+  opacity: 0;
+  transition-duration: 0.15s;
+}
+
+span.numbers-active {
+  opacity: 1;
+}
