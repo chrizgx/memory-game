@@ -9,6 +9,13 @@ export class GameService {
   icons: boolean = true;
   active: any = [];
   activeCount: number = 0;
+  moveCount: number = 0;
+  timer: any = { minutes: 0, seconds: 0 };
+  timerInterval: any = null;
+
+  players: number = 1;
+  score: number[] = [];
+
   board: any = [
     [
       { value: 0, state: '' },
@@ -76,16 +83,27 @@ export class GameService {
         this.block = false;
       }, 500);
     }
+
+    this.moveCount++;
   }
 
   // Board Constructor Functions
 
-  createGame(theme: string, size: number): void {
+  createGame(theme: string, size: number, players: number): void {
     this.menu = false;
     this.block = false;
     this.icons = theme == 'Numbers' ? false : true;
     this.active = [];
     this.activeCount = 0;
+    this.moveCount = 0;
+    this.timer = { minutes: 0, seconds: 0 };
+
+    this.players = players;
+    this.score = [];
+
+    for (let i = 0; i < this.players; i++) {
+      this.score.push(0);
+    }
 
     let builderArray: number[] = this.shuffledArray(size);
 
@@ -109,6 +127,13 @@ export class GameService {
           this.board[i][j].state = '';
         }
       }
+      this.timerInterval = setInterval(() => {
+        this.timer.seconds++;
+        if (this.timer.seconds >= 60) {
+          this.timer.seconds = 0;
+          this.timer.minutes++;
+        }
+      }, 1000);
     }, 1000 * size);
   }
 

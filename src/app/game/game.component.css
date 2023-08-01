@@ -5,8 +5,10 @@ main {
 }
 
 app-board {
+  align-self: center;
   align-items: center;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   flex-grow: 1;
 }

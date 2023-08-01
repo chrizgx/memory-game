@@ -2,7 +2,6 @@ import { Injectable, inject } from '@angular/core';
 import { RouterModule, Router } from '@angular/router';
 import { GameService } from './game.service';
 
-
 @Injectable({
   providedIn: 'root',
 })
@@ -19,7 +18,7 @@ export class ConfigService {
     if (this.players == null) return;
     if (this.grid == null) return;
 
-    this.game.createGame(this.theme, this.grid);
+    this.game.createGame(this.theme, this.grid, this.players);
 
     setTimeout(() => {
       this.router.navigate(['/play']);

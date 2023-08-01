@@ -1,0 +1,30 @@
+.single-player-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.single-player-box {
+  background-color: var(--light-slate);
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35vw;
+  padding: 0.3rem;
+}
+
+.single-player-title {
+  color: var(--slate);
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.single-player-value {
+  color: var(--navy);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}

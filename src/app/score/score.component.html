@@ -1,1 +1,13 @@
-<p>score works!</p>
+<div class="single-player-container">
+  <div class="single-player-box">
+    <p class="single-player-title">Time</p>
+    <p class="single-player-value">
+      {{ game.timer.minutes }}:{{ game.timer.seconds % 60 < 10 ? '0' : ''
+      }}{{ game.timer.seconds % 60 }}
+    </p>
+  </div>
+  <div class="single-player-box">
+    <p class="single-player-title">Moves</p>
+    <p class="single-player-value">{{ game.moveCount }}</p>
+  </div>
+</div>
