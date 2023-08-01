@@ -1,3 +1,8 @@
+/* main {
+  flex-grow: 1;
+  height: 100vh;
+} */
+
 .title {
   color: var(--white);
   font-size: 2rem;
@@ -16,6 +21,7 @@
   flex-direction: column;
   margin: 1rem auto;
   padding: 0.4rem 1.6rem;
+  width: 60vw;
   max-width: 20rem;
 }
 

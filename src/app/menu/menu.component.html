@@ -1,105 +1,105 @@
-<main>
-  <p class="title">memory</p>
-  <div class="menu-container">
-    <p class="menu-setting-title">Select Theme</p>
-    <div class="menu-setting-container">
+<p class="title">memory</p>
+<div class="menu-container">
+  <p class="menu-setting-title">Select Theme</p>
+  <div class="menu-setting-container">
+    <button
+      class="menu-setting-button"
+      [class.active]="config.theme == 'Numbers'"
+      (click)="config.theme = 'Numbers'"
+    >
+      Numbers
+    </button>
+    <div class="dropdown flex-grow">
       <button
-        class="menu-setting-button"
-        [class.active]="config.theme == 'Numbers'"
-        (click)="config.theme = 'Numbers'"
+        class="menu-setting-button dropdown-button active"
+        [class.active]="![null, 'Numbers'].includes(config.theme)"
       >
-        Numbers
-      </button>
-      <div class="dropdown flex-grow">
-        <button
-          class="menu-setting-button dropdown-button active"
-          [class.active]="![null, 'Numbers'].includes(config.theme)"
-        >
-          <!-- {{
+        <!-- {{
             ![null, 'Numbers'].includes(config.theme) ? config.theme : 'Icons'
           }} -->
-          Symbols
+        Symbols
+      </button>
+      <div class="dropdown-content">
+        <button
+          class="menu-setting-button dropdown-content-button"
+          [class.active]="config.theme == 'Space'"
+          (click)="config.theme = 'Space'"
+        >
+          Space
         </button>
-        <div class="dropdown-content">
-          <button
-            class="menu-setting-button dropdown-content-button"
-            [class.active]="config.theme == 'Space'"
-            (click)="config.theme = 'Space'"
-          >
-            Space
-          </button>
-          <button
-            class="menu-setting-button dropdown-content-button"
-            [class.active]="config.theme == 'Star Wars'"
-            (click)="config.theme = 'Star Wars'"
-          >
-            Star Wars
-          </button>
-          <button
-            class="menu-setting-button dropdown-content-button"
-            [class.active]="config.theme == 'Sports'"
-            (click)="config.theme = 'Sports'"
-          >
-            Sports
-          </button>
-          <button
-            class="menu-setting-button dropdown-content-button active"
-            [class.active]="config.theme == 'Marvel'"
-            (click)="config.theme = 'Marvel'"
-          >
-            Marvel
-          </button>
-        </div>
+        <button
+          class="menu-setting-button dropdown-content-button"
+          [class.active]="config.theme == 'Star Wars'"
+          (click)="config.theme = 'Star Wars'"
+        >
+          Star Wars
+        </button>
+        <button
+          class="menu-setting-button dropdown-content-button"
+          [class.active]="config.theme == 'Sports'"
+          (click)="config.theme = 'Sports'"
+        >
+          Sports
+        </button>
+        <button
+          class="menu-setting-button dropdown-content-button active"
+          [class.active]="config.theme == 'Marvel'"
+          (click)="config.theme = 'Marvel'"
+        >
+          Marvel
+        </button>
       </div>
     </div>
-    <p class="menu-setting-title">Number Of Players</p>
-    <div class="menu-setting-container">
-      <button
-        class="menu-setting-button"
-        [class.active]="config.players == 1"
-        (click)="config.players = 1"
-      >
-        1
-      </button>
-      <button
-        class="menu-setting-button"
-        [class.active]="config.players == 2"
-        (click)="config.players = 2"
-      >
-        2
-      </button>
-      <button
-        class="menu-setting-button"
-        [class.active]="config.players == 3"
-        (click)="config.players = 3"
-      >
-        3
-      </button>
-      <button
-        class="menu-setting-button"
-        [class.active]="config.players == 4"
-        (click)="config.players = 4"
-      >
-        4
-      </button>
-    </div>
-    <p class="menu-setting-title">Grid Size</p>
-    <div class="menu-setting-container">
-      <button
-        class="menu-setting-button"
-        [class.active]="config.grid == 4"
-        (click)="config.grid = 4"
-      >
-        4x4
-      </button>
-      <button
-        class="menu-setting-button"
-        [class.active]="config.grid == 6"
-        (click)="config.grid = 6"
-      >
-        6x6
-      </button>
-    </div>
-    <button class="start-game-button" (click)="config.createGame()">Start Game</button>
   </div>
-</main>
+  <p class="menu-setting-title">Number Of Players</p>
+  <div class="menu-setting-container">
+    <button
+      class="menu-setting-button"
+      [class.active]="config.players == 1"
+      (click)="config.players = 1"
+    >
+      1
+    </button>
+    <button
+      class="menu-setting-button"
+      [class.active]="config.players == 2"
+      (click)="config.players = 2"
+    >
+      2
+    </button>
+    <button
+      class="menu-setting-button"
+      [class.active]="config.players == 3"
+      (click)="config.players = 3"
+    >
+      3
+    </button>
+    <button
+      class="menu-setting-button"
+      [class.active]="config.players == 4"
+      (click)="config.players = 4"
+    >
+      4
+    </button>
+  </div>
+  <p class="menu-setting-title">Grid Size</p>
+  <div class="menu-setting-container">
+    <button
+      class="menu-setting-button"
+      [class.active]="config.grid == 4"
+      (click)="config.grid = 4"
+    >
+      4x4
+    </button>
+    <button
+      class="menu-setting-button"
+      [class.active]="config.grid == 6"
+      (click)="config.grid = 6"
+    >
+      6x6
+    </button>
+  </div>
+  <button class="start-game-button" (click)="config.createGame()">
+    Start Game
+  </button>
+</div>
