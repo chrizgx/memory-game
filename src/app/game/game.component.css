@@ -12,3 +12,9 @@ app-board {
   flex-direction: column;
   flex-grow: 1;
 }
+
+app-score {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

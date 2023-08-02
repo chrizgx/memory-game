@@ -1,8 +1,11 @@
 .single-player-container {
   display: flex;
   flex-direction: row;
+  flex-grow: 1;
   justify-content: space-around;
-  padding-bottom: 0.8rem;
+  padding: 1rem;
+  margin: 0;
+  max-width: 26rem;
 }
 
 .single-player-box {
@@ -12,8 +15,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 40vw;
+  flex-grow: 1;
   padding: 0.3rem;
+  margin-right: 1rem;
+}
+
+.single-player-box:last-child {
+  margin-right: 0;
 }
 
 .single-player-title {

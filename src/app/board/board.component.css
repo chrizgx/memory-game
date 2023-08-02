@@ -21,9 +21,9 @@
 
 .board-cell-6 {
   height: 14vw;
-  max-height: 4rem;
+  max-height: 4.2rem;
   width: 14vw;
-  max-width: 4rem;
+  max-width: 4.2rem;
   margin: 0.15rem;
 
   font-size: 8vw;
@@ -53,4 +53,14 @@ span.numbers {
 
 span.numbers-active {
   opacity: 1;
+}
+
+@media only screen and (min-width: 550px) {
+  .board-cell-4 {
+    font-size: 4.8rem;
+  }
+
+  .board-cell-6 {
+    font-size: 3rem;
+  }
 }
