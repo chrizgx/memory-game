@@ -19,6 +19,7 @@ export class NavbarComponent {
   }
 
   newGame() {
+    this.game.stopTimer();
     setTimeout(() => {
       this.router.navigate(['/']);
     }, 800);
@@ -26,9 +27,11 @@ export class NavbarComponent {
 
   openMenu() {
     this.game.menu = true;
+    this.game.stopTimer();
   }
 
   closeMenu() {
     this.game.menu = false;
+    this.game.setTimer();
   }
 }

@@ -127,13 +127,7 @@ export class GameService {
           this.board[i][j].state = '';
         }
       }
-      this.timerInterval = setInterval(() => {
-        this.timer.seconds++;
-        if (this.timer.seconds >= 60) {
-          this.timer.seconds = 0;
-          this.timer.minutes++;
-        }
-      }, 1000);
+      this.setTimer(true);
     }, 1000 * size);
   }
 
@@ -168,12 +162,36 @@ export class GameService {
     this.block = false;
     this.active = [];
     this.activeCount = 0;
+    this.moveCount = 0;
+
+    this.setTimer(true);
 
     for (let i = 0; i < this.board.length; i++) {
       for (let j = 0; j < this.board.length; j++) {
         this.board[i][j].state = '';
       }
     }
+  }
+
+  setTimer(reset: boolean = false) {
+    if (reset) this.timer = { seconds: 0, minutes: 0 };
+    if (this.timerInterval != null) return;
+
+    this.timerInterval = setInterval(() => {
+      this.timer.seconds++;
+      if (this.timer.seconds >= 60) {
+        this.timer.seconds = 0;
+        this.timer.minutes++;
+      }
+    }, 1000);
+  }
+
+  stopTimer(reset: boolean = false) {
+    if (reset) this.timer = { seconds: 0, minutes: 0 };
+    if (this.timerInterval == null) return;
+
+    clearInterval(this.timerInterval);
+    this.timerInterval = null;
   }
 
   constructor() {}
