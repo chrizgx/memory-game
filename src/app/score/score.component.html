@@ -1,4 +1,4 @@
-<div class="single-player-container">
+<div class="single-player-container" *ngIf="game.players == 1">
   <div class="single-player-box">
     <p class="single-player-title">Time</p>
     <p class="single-player-value">
@@ -9,5 +9,16 @@
   <div class="single-player-box">
     <p class="single-player-title">Moves</p>
     <p class="single-player-value">{{ game.moveCount }}</p>
+  </div>
+</div>
+
+<div class="multi-player-container" *ngIf="game.players > 1">
+  <div
+    class="multi-player-box"
+    *ngFor="let player of game.score; let count = index"
+    [class.box-active]="game.moveCount % game.players == count"
+  >
+    <p class="multi-player-title">P{{ count + 1 }}</p>
+    <p class="multi-player-value">{{ player }}</p>
   </div>
 </div>

@@ -72,6 +72,9 @@ export class GameService {
       this.activeCount = 0;
       this.active = [];
       this.block = false;
+
+      let currentPlayer = this.moveCount % this.players;
+      this.score[currentPlayer]++;
     } else {
       first.state = 'wrong';
       second.state = 'wrong';
@@ -100,10 +103,7 @@ export class GameService {
 
     this.players = players;
     this.score = [];
-
-    for (let i = 0; i < this.players; i++) {
-      this.score.push(0);
-    }
+    for (let i = 0; i < this.players; i++) this.score.push(0);
 
     let builderArray: number[] = this.shuffledArray(size);
 
@@ -163,6 +163,8 @@ export class GameService {
     this.active = [];
     this.activeCount = 0;
     this.moveCount = 0;
+
+    for (let i = 0; i < this.score.length; i++) this.score[i] = 0;
 
     this.setTimer(true);
 

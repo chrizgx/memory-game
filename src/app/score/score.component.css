@@ -1,4 +1,5 @@
-.single-player-container {
+.single-player-container,
+.multi-player-container {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
@@ -8,7 +9,8 @@
   max-width: 26rem;
 }
 
-.single-player-box {
+.single-player-box,
+.multi-player-box {
   background-color: var(--light-slate);
   border-radius: 0.4rem;
   display: flex;
@@ -18,20 +20,33 @@
   flex-grow: 1;
   padding: 0.3rem;
   margin-right: 1rem;
+  transition-duration: 0.2s;
 }
 
-.single-player-box:last-child {
+.single-player-box:last-child,
+.multi-player-box:last-child {
   margin-right: 0;
 }
 
-.single-player-title {
+.box-active {
+  background-color: var(--orange);
+}
+
+.single-player-title,
+.multi-player-title {
   color: var(--slate);
   font-size: 1rem;
   font-weight: bold;
   margin: 0;
 }
 
-.single-player-value {
+.box-active .multi-player-title,
+.box-active .multi-player-value {
+  color: var(--white);
+}
+
+.single-player-value,
+.multi-player-value {
   color: var(--navy);
   font-size: 1.5rem;
   font-weight: bold;
