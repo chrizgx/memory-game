@@ -31,10 +31,14 @@
 
 .active {
   background-color: var(--orange);
+  outline: 2px solid var(--orange);
+  outline-offset: 2px;
 }
 
 .wrong {
   background-color: red;
+  outline: 2px solid red;
+  outline-offset: 2px;
 }
 
 .correct {
