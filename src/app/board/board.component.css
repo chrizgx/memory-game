@@ -43,8 +43,8 @@
 
 .board-cell-6.active {
   background-color: var(--orange);
-  outline: 1px solid var(--orange);
-  outline-offset: 1px;
+  outline: 2px solid var(--orange);
+  outline-offset: 2px;
 }
 
 /* .wrong {
@@ -61,8 +61,8 @@
 
 .board-cell-6.wrong {
   background-color: red;
-  outline: 1px solid red;
-  outline-offset: 1px;
+  outline: 2px solid red;
+  outline-offset: 2px;
 }
 
 .correct {
