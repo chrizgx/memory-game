@@ -49,6 +49,7 @@ export class GameService {
     if (this.block) return;
     if (this.board[row][col].state == 'active') return;
     if (this.board[row][col].state == 'correct') return;
+    if (this.board[row][col].state == 'preview') return;
 
     this.board[row][col].state = 'active';
     this.activeCount++;
@@ -179,9 +180,18 @@ export class GameService {
 
     for (let i = 0; i < this.board.length; i++) {
       for (let j = 0; j < this.board.length; j++) {
-        this.board[i][j].state = '';
+        this.board[i][j].state = 'preview';
       }
     }
+
+    setTimeout(() => {
+      for (let i = 0; i < this.board.length; i++) {
+        for (let j = 0; j < this.board.length; j++) {
+          this.board[i][j].state = '';
+        }
+      }
+      this.setTimer(true);
+    }, 1000 * 4);
   }
 
   setTimer(reset: boolean = false) {
