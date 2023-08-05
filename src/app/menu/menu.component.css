@@ -43,28 +43,44 @@
 .menu-setting-button {
   background-color: var(--light-slate);
   border-radius: 5rem;
+  outline-offset: 10px;
   color: var(--white);
   flex-grow: 1;
   font-size: 1rem;
   font-weight: bold;
   margin: 0.4rem;
   padding: 0.6rem;
-  transition-duration: 0.1s;
+  transition-duration: 0.14s;
 }
 
 .menu-setting-button.active {
   background-color: var(--navy);
+  outline: 1px solid var(--navy);
+  outline-offset: 3px;
+}
+
+.menu-setting-button:disabled:active {
+  background-color: red;
+  outline-offset: 3px;
+  outline: 1px solid red;
 }
 
 .start-game-button {
   background-color: var(--orange);
   border-radius: 5rem;
+  outline-offset: -5px;
   color: var(--white);
   flex-grow: 1;
   font-size: 1.2rem;
   font-weight: bold;
   margin: 1.2rem 0rem 1.2rem 0rem;
   padding: 0.6rem;
+  transition-duration: 0.2s;
+}
+
+.start-game-button:focus {
+  outline: 3px solid var(--orange);
+  outline-offset: 3px;
 }
 
 .dropdown {

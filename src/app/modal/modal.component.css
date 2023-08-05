@@ -1,0 +1,91 @@
+.modal {
+  background-color: #0003;
+  backdrop-filter: blur(30px);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.modal-container {
+  background-color: var(--white);
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  /* flex-grow: 1; */
+  width: 60vw;
+  text-align: center;
+  padding: 1.6rem;
+}
+
+.modal-title {
+  color: var(--navy);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 0.8rem 0;
+}
+
+.modal-subtitle {
+  color: var(--slate);
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 0 0 1rem 0;
+}
+
+.modal-score-box {
+  background-color: var(--gray);
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 0 0 1rem 0;
+}
+
+.modal-score-box-title {
+  color: var(--slate);
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.modal-score-box-value {
+  color: var(--navy);
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.restart-button,
+.new-game-button {
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.75rem;
+}
+
+.restart-button {
+  background-color: var(--orange);
+  color: var(--white);
+  margin-bottom: 0.75rem;
+}
+
+.new-game-button {
+  background-color: var(--gray);
+  color: var(--navy);
+}
+
+.new-game-button:focus {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+@media (orientation: landscape) {
+  .modal-container {
+    max-width: 18rem;
+  }
+}

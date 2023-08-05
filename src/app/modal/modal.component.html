@@ -1,0 +1,20 @@
+<div class="modal" *ngIf="game.remaining == 0">
+  <div class="modal-container">
+    <p class="modal-title">You did it!</p>
+    <p class="modal-subtitle">Game Over! Here's how you got on...</p>
+    <div class="modal-score-box">
+      <p class="modal-score-box-title">Time Elapsed</p>
+      <p class="modal-score-box-value">
+        {{ game.timer.minutes }}:{{
+          game.timer.seconds < 10 ? '0' : '' + game.timer.seconds
+        }}
+      </p>
+    </div>
+    <div class="modal-score-box">
+      <p class="modal-score-box-title">Moves Taken</p>
+      <p class="modal-score-box-value">{{ game.moveCount }}</p>
+    </div>
+    <button class="restart-button" (click)="restart()">Restart</button>
+    <button class="new-game-button" (click)="newGame()">Setup New Game</button>
+  </div>
+</div>

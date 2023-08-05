@@ -9,7 +9,8 @@ export class ConfigService {
   router: Router = inject(Router);
   game: GameService = inject(GameService);
 
-  theme: 'Numbers' | 'Space' | 'Star Wars' | 'Sports' | 'Marvel' | null = null;
+  theme: 'Numbers' | 'Space' | 'Star Wars' | 'Sports' | 'Marvel' | null =
+    'Numbers';
   players: number | null = null;
   grid: 4 | 6 | null = null;
 

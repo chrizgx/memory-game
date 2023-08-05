@@ -13,13 +13,14 @@
       <button
         class="menu-setting-button dropdown-button active"
         [class.active]="![null, 'Numbers'].includes(config.theme)"
+        disabled
       >
         <!-- {{
             ![null, 'Numbers'].includes(config.theme) ? config.theme : 'Icons'
           }} -->
         Symbols
       </button>
-      <div class="dropdown-content">
+      <div class="dropdown-content" *ngIf="false">
         <button
           class="menu-setting-button dropdown-content-button"
           [class.active]="config.theme == 'Space'"

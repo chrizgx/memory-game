@@ -16,6 +16,8 @@ export class GameService {
   players: number = 1;
   score: number[] = [];
 
+  remaining: number = 0;
+
   board: any = [
     [
       { value: 0, state: '' },
@@ -75,6 +77,9 @@ export class GameService {
 
       let currentPlayer = this.moveCount % this.players;
       this.score[currentPlayer]++;
+      this.remaining--;
+      clearInterval(this.timerInterval);
+      this.timerInterval = null;
     } else {
       first.state = 'wrong';
       second.state = 'wrong';
@@ -104,6 +109,8 @@ export class GameService {
     this.players = players;
     this.score = [];
     for (let i = 0; i < this.players; i++) this.score.push(0);
+
+    this.remaining = (size * size) / 2;
 
     let builderArray: number[] = this.shuffledArray(size);
 
@@ -165,6 +172,8 @@ export class GameService {
     this.moveCount = 0;
 
     for (let i = 0; i < this.score.length; i++) this.score[i] = 0;
+
+    this.remaining = (this.board.length * this.board.length) / 2;
 
     this.setTimer(true);
 
