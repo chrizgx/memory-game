@@ -77,7 +77,9 @@ export class GameService {
       let currentPlayer = this.moveCount % this.players;
       this.score[currentPlayer]++;
       this.remaining--;
-      if (this.remaining == 0) this.stopTimer();
+      if (this.remaining == 0) {
+        this.stopTimer();
+      }
     } else {
       first.state = 'wrong';
       second.state = 'wrong';
