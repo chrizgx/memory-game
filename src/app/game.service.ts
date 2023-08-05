@@ -46,7 +46,6 @@ export class GameService {
   ];
 
   play(row: number, col: number) {
-    console.log(this.shuffledArray(4));
     if (this.block) return;
     if (this.board[row][col].state == 'active') return;
     if (this.board[row][col].state == 'correct') return;
@@ -78,8 +77,7 @@ export class GameService {
       let currentPlayer = this.moveCount % this.players;
       this.score[currentPlayer]++;
       this.remaining--;
-      clearInterval(this.timerInterval);
-      this.timerInterval = null;
+      if (this.remaining == 0) this.stopTimer();
     } else {
       first.state = 'wrong';
       second.state = 'wrong';
@@ -122,7 +120,7 @@ export class GameService {
 
       for (let j = 0; j < size; j++) {
         let val = builderArray.pop();
-        arr.push({ value: val, state: 'active' });
+        arr.push({ value: val, state: 'preview' });
       }
 
       this.board.push(arr);

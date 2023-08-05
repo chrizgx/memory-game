@@ -14,7 +14,7 @@
         *ngIf="!game.icons"
         class="numbers"
         [class.numbers-active]="
-          ['active', 'wrong', 'correct'].includes(cell.state)
+          ['preview', 'active', 'wrong', 'correct'].includes(cell.state)
         "
         >{{ !game.icons ? cell.value : '' }}</span
       >
