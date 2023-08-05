@@ -29,20 +29,60 @@
   font-size: 8vw;
 }
 
-.active {
+/* .active {
+  background-color: var(--orange);
+  outline: 2px solid var(--orange);
+  outline-offset: 2px;
+} */
+
+.board-cell-4.active {
   background-color: var(--orange);
   outline: 2px solid var(--orange);
   outline-offset: 2px;
 }
 
-.wrong {
+.board-cell-6.active {
+  background-color: var(--orange);
+  outline: 1px solid var(--orange);
+  outline-offset: 1px;
+}
+
+/* .wrong {
+  background-color: red;
+  outline: 2px solid red;
+  outline-offset: 2px;
+} */
+
+.board-cell-4.wrong {
   background-color: red;
   outline: 2px solid red;
   outline-offset: 2px;
 }
 
+.board-cell-6.wrong {
+  background-color: red;
+  outline: 1px solid red;
+  outline-offset: 1px;
+}
+
 .correct {
   background-color: var(--light-slate);
+  transform: scale(0);
+  animation-name: disappear;
+  animation-duration: 1s;
+}
+
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
 }
 
 /* Numbers Styling */

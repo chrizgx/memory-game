@@ -77,8 +77,10 @@ export class GameService {
 
       let currentPlayer = this.moveCount % this.players;
       this.score[currentPlayer]++;
-      this.remaining--;
-      if (this.remaining == 0) {
+      setTimeout(() => {
+        this.remaining--;
+      }, 1100);
+      if (this.remaining <= 1) {
         this.stopTimer();
       }
     } else {
