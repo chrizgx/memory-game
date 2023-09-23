@@ -181,7 +181,7 @@ export class GameService {
 
     this.remaining = (this.board.length * this.board.length) / 2;
 
-    this.setTimer(true);
+    this.stopTimer(true);
 
     for (let i = 0; i < this.board.length; i++) {
       for (let j = 0; j < this.board.length; j++) {
