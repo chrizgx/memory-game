@@ -16,15 +16,28 @@ This project is a fun and interactive memory game built using Angular. The game 
 - Guards: The game uses Angular's guard feature to control access to the game component, ensuring a smooth user experience.
 - Hash-Based Routing: The project is configured to use hash-based routing for better compatibility with legacy server configurations.
 
-### Installation
+## Setup Installation
 
-To run the game locally, you need to have Node.js and npm installed. Then, install Angular CLI globally using npm:
+1. To run the game locally, you need to have Node.js and npm installed.
+2. Then, install Angular CLI globally using npm: `npm i -g @angular/cli`
+3. Clone the repository, navigate to the project directory, and install dependencies using `npm i`
 
-Clone the repository, navigate to the project directory, and install dependencies:
+### Run
 
-Start the development server:
+After following the installation steps...
+1. use `ng serve` to locally host the game.
+2. Open your browser and visit http://localhost:4200 to play the game.
 
-Open your browser and visit http://localhost:4200 to play the game.
-Conclusion
+### Build & Host
+
+1. Build the angular app with `npm build` or `ng build`
+
+2. Set PORT environmental variable to the port on which you want to host the file server
+
+3. Start Node.js server using `npm start` or `node server.js`
+
+4. Visit http://localhost:{ PORT } and play!
+
+## Conclusion
 
 This memory game project showcases my skills as a developer, particularly in Angular and front-end development. I'm capable of creating engaging, interactive web applications with a focus on user experience and code quality. I'm open to opportunities where I can further apply and expand my skills.
