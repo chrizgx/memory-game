@@ -5,17 +5,13 @@
 
 This project is a fun and interactive memory game built using Angular. The game is designed to test and improve the player's memory skills.
 
-| Image 1 | Image 2 | Image 3 |
+| Game Setup | Cards Initial Preview | Selected Card |
 |---------|---------|---------|
-| <img src="https://github.com/chrizgx/memory-game/assets/102369753/335d6e79-488c-4388-b09d-4a655b2b7969" width="200"> | <img src="https://github.com/chrizgx/memory-game/assets/102369753/9a23f5ed-18af-4512-95b9-0874d9f1dc03" width="200"> | <img src="https://github.com/chrizgx/memory-game/assets/102369753/1059c78c-f1eb-444f-9053-111a7ff23894" width="200"> |
-| <img src="https://github.com/chrizgx/memory-game/assets/102369753/ae935014-32b3-470d-a44f-bf5235a0309d" width="200"> | <img src="https://github.com/chrizgx/memory-game/assets/102369753/4ff6329f-a3dc-4492-bf0b-5147026791ae" width="200"> | <img src="https://github.com/chrizgx/memory-game/assets/102369753/e58a3f5d-723c-4ad2-8649-6b29e1ccc0b0" width="200"> |
+| <img src="https://github.com/chrizgx/memory-game/assets/102369753/335d6e79-488c-4388-b09d-4a655b2b7969" > | <img src="https://github.com/chrizgx/memory-game/assets/102369753/9a23f5ed-18af-4512-95b9-0874d9f1dc03" > | <img src="https://github.com/chrizgx/memory-game/assets/102369753/1059c78c-f1eb-444f-9053-111a7ff23894" > |
 
-    <!-- <img src="https://github.com/chrizgx/memory-game/assets/102369753/335d6e79-488c-4388-b09d-4a655b2b7969" style="width: 100%; max-width: 400px;">
-    <img src="https://github.com/chrizgx/memory-game/assets/102369753/9a23f5ed-18af-4512-95b9-0874d9f1dc03" style="width: 100%; max-width: 400px;">
-    <img src="https://github.com/chrizgx/memory-game/assets/102369753/1059c78c-f1eb-444f-9053-111a7ff23894" style="width: 100%; max-width: 400px;">
-    <img src="https://github.com/chrizgx/memory-game/assets/102369753/ae935014-32b3-470d-a44f-bf5235a0309d" style="width: 100%; max-width: 400px;">
-    <img src="https://github.com/chrizgx/memory-game/assets/102369753/4ff6329f-a3dc-4492-bf0b-5147026791ae" style="width: 100%; max-width: 400px;">
-    <img src="https://github.com/chrizgx/memory-game/assets/102369753/e58a3f5d-723c-4ad2-8649-6b29e1ccc0b0" style="width: 100%; max-width: 400px;"> -->
+| Found Pair | Pause Menu | Game Over |
+|---------|---------|---------|
+| <img src="https://github.com/chrizgx/memory-game/assets/102369753/ae935014-32b3-470d-a44f-bf5235a0309d" > | <img src="https://github.com/chrizgx/memory-game/assets/102369753/4ff6329f-a3dc-4492-bf0b-5147026791ae" > | <img src="https://github.com/chrizgx/memory-game/assets/102369753/e58a3f5d-723c-4ad2-8649-6b29e1ccc0b0" > |
 
 ### Features
 
