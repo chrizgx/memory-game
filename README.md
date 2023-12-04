@@ -1,27 +1,30 @@
-# MyApp
+# Memory Game
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
+This project is a fun and interactive memory game built using Angular. The game is designed to test and improve the player's memory skills.
 
-## Development server
+### Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Grid Size Selection: Players can choose between a 4x4 or a 6x6 grid based on their preference and skill level.
+- Multiplayer Support: The game supports up to 4 players, making it a fun and competitive experience for groups.
+- Card Preview: At the start of the game, all cards are briefly shown to give players a glimpse of the card locations.
+- Memory Challenge: After the preview, cards are hidden and players must find matching pairs using their memory.
 
-## Code scaffolding
+### Technical Highlights
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular: The game is built using Angular, demonstrating proficiency in this popular and powerful framework.
+- Routing: The project uses Angular's routing capabilities to navigate between different components and views.
+- Guards: The game uses Angular's guard feature to control access to the game component, ensuring a smooth user experience.
+- Hash-Based Routing: The project is configured to use hash-based routing for better compatibility with legacy server configurations.
 
-## Build
+### Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+To run the game locally, you need to have Node.js and npm installed. Then, install Angular CLI globally using npm:
 
-## Running unit tests
+Clone the repository, navigate to the project directory, and install dependencies:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Start the development server:
 
-## Running end-to-end tests
+Open your browser and visit http://localhost:4200 to play the game.
+Conclusion
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+This memory game project showcases my skills as a developer, particularly in Angular and front-end development. I'm capable of creating engaging, interactive web applications with a focus on user experience and code quality. I'm open to opportunities where I can further apply and expand my skills.
