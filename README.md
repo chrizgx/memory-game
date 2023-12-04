@@ -1,3 +1,6 @@
+![Screen Shot 2023-12-04 at 17 32 52](https://github.com/chrizgx/memory-game/assets/102369753/335d6e79-488c-4388-b09d-4a655b2b7969) ![Screen Shot 2023-12-04 at 17 33 19](https://github.com/chrizgx/memory-game/assets/102369753/9a23f5ed-18af-4512-95b9-0874d9f1dc03)
+![Screen Shot 2023-12-04 at 17 33 45](https://github.com/chrizgx/memory-game/assets/102369753/1059c78c-f1eb-444f-9053-111a7ff23894) ![Screen Shot 2023-12-04 at 17 34 19](https://github.com/chrizgx/memory-game/assets/102369753/ae935014-32b3-470d-a44f-bf5235a0309d)
+![Screen Shot 2023-12-04 at 17 34 27](https://github.com/chrizgx/memory-game/assets/102369753/4ff6329f-a3dc-4492-bf0b-5147026791ae) ![Screen Shot 2023-12-04 at 17 34 57](https://github.com/chrizgx/memory-game/assets/102369753/e58a3f5d-723c-4ad2-8649-6b29e1ccc0b0)
 # Memory Game
 
 This project is a fun and interactive memory game built using Angular. The game is designed to test and improve the player's memory skills.
